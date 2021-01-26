@@ -1,6 +1,6 @@
-# productAPI
-Product micro services
-node js with postgresql
+# userAPI
+API to manage products in shopping cart application
+NodeJs application with MongoDB
 
 To set the database connection string
 Set admindb_connection=mongodb+srv://dbuser:<password>@admin.3kv7w.mongodb.net/AdminDB?retryWrites=true^&w=majority
