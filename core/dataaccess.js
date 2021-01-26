@@ -60,16 +60,9 @@ module.exports.delete = (model, filter, res) => {
     return response;
 }
 
-module.exports.update = (model, filter, req, res) => {
+module.exports.update = (model, filter, updateModel, res) => {
     const id = mongoose.Types.ObjectId(filter);
-    const response = model.findByIdAndUpdate(id, {
-        _id: id,
-        name: req.body.name,
-        role: req.body.role,
-        status: req.body.status,
-        createdBy: req.body.createdBy,
-        createdAt: req.body.createdAt
-    }, { new: true })
+    const response = model.findByIdAndUpdate(id, updateModel, { new: true })
         .then(response => {
             debugDatabase('Updated successful', response);
             return res.status(200).send(response);

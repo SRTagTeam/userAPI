@@ -1,4 +1,4 @@
 {
     "name": "app_name",
-    "adminDb": "admindb_connection"
+    "adminDb": "userdb_connection"
 }
