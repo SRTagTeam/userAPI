@@ -1,5 +1,5 @@
 {
-  "name": "productapi",
+  "name": "userapi",
   "version": "1.0.0",
   "description": "API to manage shopping cart admin services",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "start": "nodemon server.js"
   },
   "keywords": [
-    "adminApi"
+    "userApi"
   ],
   "author": "SRRJ",
   "license": "ISC",
